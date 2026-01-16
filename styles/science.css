@@ -1,0 +1,17 @@
+header{
+    display: flex;
+}
+header h1{
+    margin-left: 430px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+
+    text-align: center;
+}
+main h2:first-of-type{
+    grid-column: 1/-1;
+}

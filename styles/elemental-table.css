@@ -1,0 +1,311 @@
+body{
+    width: 95%;
+    margin: 5% auto;
+}
+
+header{
+    display: flex;
+}
+header h1{
+    margin-left: 300px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    column-gap: 10px;
+}
+
+.content{
+    border: 1px solid black;
+    padding: 5px;
+}
+.content :not(h2):not(i){
+    display: none;
+}
+.content h2{
+    font-size: .95em;
+    display: flex;
+    justify-content: space-between;
+}
+.content h2:hover{
+    cursor: pointer;
+}
+
+.alkaliChange .alkali :not(h2):not(i){
+    display: block;
+}
+.metalloidChange .metalloid :not(h2):not(i){
+    display: block;
+}
+.transitionChange .transition :not(h2):not(i){
+    display: block;
+}
+.actinoidChange .actinoid :not(h2):not(i){
+    display: block;
+}
+.nonmetalChange .nonmetal :not(h2):not(i){
+    display: block;
+}
+.halogenChange .halogen :not(h2):not(i){
+    display: block;
+}
+.nobleChange .noble :not(h2):not(i){
+    display: block;
+}
+
+.alkaliChange .alkali i{
+    transform: rotate(270deg);
+}
+.metalloidChange .metalloid i{
+    transform: rotate(270deg);
+}
+.transitionChange .transition i{
+    transform: rotate(270deg);
+}
+.actinoidChange .actinoid i{
+    transform: rotate(270deg);
+}
+.nonmetalChange .nonmetal i{
+    transform: rotate(270deg);
+}
+.halogenChange .halogen i{
+    transform: rotate(270deg);
+}
+.nobleChange .noble i{
+    transform: rotate(270deg);
+}
+
+
+.content section{
+    margin-left: 10px;
+}
+.content section section{
+    margin-left: 20px;
+}
+.content section section section{
+    margin-left: 30px;
+}
+
+
+
+.table{
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+}
+.table div{
+    display: flex;
+    aspect-ratio: 1/1;
+    justify-content: center;
+
+    border: 1px solid black;
+}
+.table div:nth-of-type(2){
+    grid-column: 18/18;
+}
+.table div:nth-of-type(5){
+    grid-column: 13/13;
+}
+.table div:nth-of-type(13){
+    grid-column: 13/13;
+}
+.table div:nth-of-type(91){
+    grid-column: 3/3;
+}
+.table div:nth-of-type(105){
+    grid-column: 3/3;
+}
+.table div:nth-of-type(n+91):nth-of-type(-n+104){
+    margin-top: 25px;
+}
+
+
+.alkali_table{
+    background-color: orange;
+}
+.metalloid_table{
+    background-color: green;
+}
+.transition_table{
+    background-color: lightgreen;
+}
+.actinoid_table{
+    background-color: rgb(188, 250, 250);
+}
+.nonmetal_table{
+    background-color: purple;
+}
+.halogen_table{
+    background-color: pink;
+}
+.noble_table{
+    background-color: blue;
+}
+
+main:has(.alkali:hover) .alkali_table{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+main:has(.metalloid:hover) .metalloid_table{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+main:has(.transition:hover) .transition_table{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+main:has(.actinoid:hover) .actinoid_table{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+main:has(.nonmetal:hover) .nonmetal_table{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+main:has(.halogen:hover) .halogen_table{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+main:has(.noble:hover) .noble_table{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+/* 
+alkali_table
+metalloid_table
+transition_table
+actinoid_table
+nonmetal_table
+halogen_table
+noble_table
+*/
+
+
+
+.info section p:last-of-type{
+    margin-left: 10px;
+}
+
+.info section{
+    display: none;
+}
+
+.e1 .info section:nth-of-type(1){display: block}
+.e2 .info section:nth-of-type(2){display: block}
+.e3 .info section:nth-of-type(3){display: block}
+.e4 .info section:nth-of-type(4){display: block}
+.e5 .info section:nth-of-type(5){display: block}
+.e6 .info section:nth-of-type(6){display: block}
+.e7 .info section:nth-of-type(7){display: block}
+.e8 .info section:nth-of-type(8){display: block}
+.e9 .info section:nth-of-type(9){display: block}
+.e10 .info section:nth-of-type(10){display: block}
+.e11 .info section:nth-of-type(11){display: block}
+.e12 .info section:nth-of-type(12){display: block}
+.e13 .info section:nth-of-type(13){display: block}
+.e14 .info section:nth-of-type(14){display: block}
+.e15 .info section:nth-of-type(15){display: block}
+.e16 .info section:nth-of-type(16){display: block}
+.e17 .info section:nth-of-type(17){display: block}
+.e18 .info section:nth-of-type(18){display: block}
+.e19 .info section:nth-of-type(19){display: block}
+.e20 .info section:nth-of-type(20){display: block}
+.e21 .info section:nth-of-type(21){display: block}
+.e22 .info section:nth-of-type(22){display: block}
+.e23 .info section:nth-of-type(23){display: block}
+.e24 .info section:nth-of-type(24){display: block}
+.e25 .info section:nth-of-type(25){display: block}
+.e26 .info section:nth-of-type(26){display: block}
+.e27 .info section:nth-of-type(27){display: block}
+.e28 .info section:nth-of-type(28){display: block}
+.e29 .info section:nth-of-type(29){display: block}
+.e30 .info section:nth-of-type(30){display: block}
+.e31 .info section:nth-of-type(31){display: block}
+.e32 .info section:nth-of-type(32){display: block}
+.e33 .info section:nth-of-type(33){display: block}
+.e34 .info section:nth-of-type(34){display: block}
+.e35 .info section:nth-of-type(35){display: block}
+.e36 .info section:nth-of-type(36){display: block}
+.e37 .info section:nth-of-type(37){display: block}
+.e38 .info section:nth-of-type(38){display: block}
+.e39 .info section:nth-of-type(39){display: block}
+.e40 .info section:nth-of-type(40){display: block}
+.e41 .info section:nth-of-type(41){display: block}
+.e42 .info section:nth-of-type(42){display: block}
+.e43 .info section:nth-of-type(43){display: block}
+.e44 .info section:nth-of-type(44){display: block}
+.e45 .info section:nth-of-type(45){display: block}
+.e46 .info section:nth-of-type(46){display: block}
+.e47 .info section:nth-of-type(47){display: block}
+.e48 .info section:nth-of-type(48){display: block}
+.e49 .info section:nth-of-type(49){display: block}
+.e50 .info section:nth-of-type(50){display: block}
+.e51 .info section:nth-of-type(51){display: block}
+.e52 .info section:nth-of-type(52){display: block}
+.e53 .info section:nth-of-type(53){display: block}
+.e54 .info section:nth-of-type(54){display: block}
+.e55 .info section:nth-of-type(55){display: block}
+.e56 .info section:nth-of-type(56){display: block}
+.e57 .info section:nth-of-type(57){display: block}
+.e58 .info section:nth-of-type(58){display: block}
+.e59 .info section:nth-of-type(59){display: block}
+.e60 .info section:nth-of-type(60){display: block}
+.e61 .info section:nth-of-type(61){display: block}
+.e62 .info section:nth-of-type(62){display: block}
+.e63 .info section:nth-of-type(63){display: block}
+.e64 .info section:nth-of-type(64){display: block}
+.e65 .info section:nth-of-type(65){display: block}
+.e66 .info section:nth-of-type(66){display: block}
+.e67 .info section:nth-of-type(67){display: block}
+.e68 .info section:nth-of-type(68){display: block}
+.e69 .info section:nth-of-type(69){display: block}
+.e70 .info section:nth-of-type(70){display: block}
+.e71 .info section:nth-of-type(71){display: block}
+.e72 .info section:nth-of-type(72){display: block}
+.e73 .info section:nth-of-type(73){display: block}
+.e74 .info section:nth-of-type(74){display: block}
+.e75 .info section:nth-of-type(75){display: block}
+.e76 .info section:nth-of-type(76){display: block}
+.e77 .info section:nth-of-type(77){display: block}
+.e78 .info section:nth-of-type(78){display: block}
+.e79 .info section:nth-of-type(79){display: block}
+.e80 .info section:nth-of-type(80){display: block}
+.e81 .info section:nth-of-type(81){display: block}
+.e82 .info section:nth-of-type(82){display: block}
+.e83 .info section:nth-of-type(83){display: block}
+.e84 .info section:nth-of-type(84){display: block}
+.e85 .info section:nth-of-type(85){display: block}
+.e86 .info section:nth-of-type(86){display: block}
+.e87 .info section:nth-of-type(87){display: block}
+.e88 .info section:nth-of-type(88){display: block}
+.e89 .info section:nth-of-type(89){display: block}
+.e90 .info section:nth-of-type(90){display: block}
+.e91 .info section:nth-of-type(91){display: block}
+.e92 .info section:nth-of-type(92){display: block}
+.e93 .info section:nth-of-type(93){display: block}
+.e94 .info section:nth-of-type(94){display: block}
+.e95 .info section:nth-of-type(95){display: block}
+.e96 .info section:nth-of-type(96){display: block}
+.e97 .info section:nth-of-type(97){display: block}
+.e98 .info section:nth-of-type(98){display: block}
+.e99 .info section:nth-of-type(99){display: block}
+.e100 .info section:nth-of-type(100){display: block}
+.e101 .info section:nth-of-type(101){display: block}
+.e102 .info section:nth-of-type(102){display: block}
+.e103 .info section:nth-of-type(103){display: block}
+.e104 .info section:nth-of-type(104){display: block}
+.e105 .info section:nth-of-type(105){display: block}
+.e106 .info section:nth-of-type(106){display: block}
+.e107 .info section:nth-of-type(107){display: block}
+.e108 .info section:nth-of-type(108){display: block}
+.e109 .info section:nth-of-type(109){display: block}
+.e110 .info section:nth-of-type(110){display: block}
+.e111 .info section:nth-of-type(111){display: block}
+.e112 .info section:nth-of-type(112){display: block}
+.e113 .info section:nth-of-type(113){display: block}
+.e114 .info section:nth-of-type(114){display: block}
+.e115 .info section:nth-of-type(115){display: block}
+.e116 .info section:nth-of-type(116){display: block}
+.e117 .info section:nth-of-type(117){display: block}
+.e118 .info section:nth-of-type(118){display: block}

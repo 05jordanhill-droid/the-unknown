@@ -1,0 +1,48 @@
+header{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+header h1{
+    font-size: 3em;
+}
+
+main{
+    display: flex;
+    margin-top: 80px;
+}
+
+main a:first-of-type:hover{
+    font-size: 1.25em;
+}
+main a:last-of-type:hover{
+    font-size: 1.25em;
+}
+
+.orb {
+    width: 500px;
+    height: 20px;
+    border-radius: 50%;
+
+    offset-path: ellipse(200px 70px at center);
+    offset-distance: 0%;
+    offset-rotate: 0deg;
+
+    animation: orbit 10s linear infinite;
+}
+.orb_ {
+    width: 500px;
+    height: 20px;
+    border-radius: 50%;
+
+    offset-path: ellipse(200px 70px at center);
+    offset-distance: 0%;
+    offset-rotate: 0deg;
+
+    animation: orbit 10s linear infinite;
+    animation-delay: -5s;
+}
+@keyframes orbit {
+    to {
+        offset-distance: 100%;
+    }
+}

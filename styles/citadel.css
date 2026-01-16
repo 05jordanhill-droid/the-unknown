@@ -1,0 +1,12 @@
+header{
+    display: flex;
+}
+header h1{
+    margin-left: 300px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}

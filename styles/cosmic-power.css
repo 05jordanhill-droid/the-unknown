@@ -1,0 +1,10 @@
+body{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    width: 80%;
+}
+img{
+    position: fixed;
+    width: 45%;
+    right: 0;
+}

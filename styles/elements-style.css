@@ -1,0 +1,28 @@
+header{
+    display: flex;
+}
+header h1{
+    margin-left: 350px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.second p{
+    margin-left: 10px;
+}
+.second h3{
+    margin-left: 10px;
+}
+.second h4{
+    margin-left: 20px;
+}
+
+.second section{
+    margin-left: 20px;
+}
+.second section:last-of-type p{
+    margin-left: 30px;
+}

@@ -1,0 +1,89 @@
+header{
+    display: flex;
+}
+header h1{
+    margin-left: 300px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.menu{
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid black;
+}
+.menu section{
+    display: grid;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    margin-top: 0px;
+
+    grid-template-columns: 1fr auto;
+}
+
+.info{
+    border: 1px solid black;
+    background-color: black;
+}
+.info div{
+    position: absolute;
+    right: 200px;
+    width: 60%;
+}
+.title h1{
+    position: absolute;
+    right: 465px;
+    bottom: 150px;
+    color: white;
+}
+.info div,
+.beginningChange .title,
+.chaosChange .title,
+.orderChange .title,
+.warChange .title,
+.deitiesChange .title,
+.titansChange .title,
+.wastelandChange .title,
+.newChange .title{
+    opacity: 0;
+    z-index: 1;
+}
+
+.beginningChange .beginning,
+.chaosChange .chaos,
+.orderChange .order,
+.warChange .war,
+.deitiesChange .deities,
+.titansChange .titans,
+.wastelandChange .wasteland,
+.newChange .new{
+    opacity: 1;
+    width: 60%;
+    z-index: 2;
+    background-color: transparent;
+}
+.beginningChange .info,
+.chaosChange .info,
+.orderChange .info,
+.warChange .info,
+.deitiesChange .info,
+.titansChange .info,
+.wastelandChange .info,
+.newChange .info{
+    background-color: transparent;
+}
+.beginningChange .beginning_,
+.chaosChange .chaos_,
+.orderChange .order_,
+.warChange .war_,
+.deitiesChange .deities_,
+.titansChange .titans_,
+.wastelandChange .wasteland_,
+.newChange .new_{
+    rotate: -90deg;
+}
