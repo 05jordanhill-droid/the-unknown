@@ -46,3 +46,20 @@ main a:last-of-type:hover{
         offset-distance: 100%;
     }
 }
+
+@media screen and (max-width: 900px){
+    header h1{
+        font-size: 1.5em;
+        margin-left: 30px;
+    }
+    header h5{
+        font-size: .7em;
+    }
+    main h1{
+        font-size: .9em;
+    }
+
+    .orb, .orb_{
+        offset-path: ellipse(100px 70px at center);
+    }
+}

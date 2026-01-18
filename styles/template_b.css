@@ -21,3 +21,9 @@ main section h4{
 main section section{
     margin-left: 30px;
 }
+
+@media screen and (max-width: 900px){
+    body{
+        width: 80%;
+    }
+}

@@ -313,3 +313,19 @@ noble_table
 .e116 .info section:nth-of-type(116){display: block}
 .e117 .info section:nth-of-type(117){display: block}
 .e118 .info section:nth-of-type(118){display: block}
+
+
+
+@media screen and (max-width: 900px){
+    header h1{
+        margin-left: 50px;
+    }
+    
+    main{
+        display: block;
+    }
+
+    .table div{
+        font-size: .3em;
+    }
+}

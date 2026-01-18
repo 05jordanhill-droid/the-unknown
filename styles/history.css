@@ -87,3 +87,44 @@ main{
 .newChange .new_{
     rotate: -90deg;
 }
+
+@media screen and (max-width: 900px){
+    header h1{
+        margin-left: 50px;
+    }
+    main{
+        display: block;
+    }
+
+    .info div{
+        left: 50px;
+    }
+
+    .beginningChange .beginning,
+    .chaosChange .chaos,
+    .orderChange .order,
+    .warChange .war,
+    .deitiesChange .deities,
+    .titansChange .titans,
+    .wastelandChange .wasteland,
+    .newChange .new{
+        width: 70%;
+    }
+    .beginningChange .beginning_,
+    .chaosChange .chaos_,
+    .orderChange .order_,
+    .warChange .war_,
+    .deitiesChange .deities_,
+    .titansChange .titans_,
+    .wastelandChange .wasteland_,
+    .newChange .new_{
+        rotate: 0deg;
+    }
+    .menu i{
+        rotate: 90deg;
+    }
+
+    .title h1{
+        display: none;
+    }
+}

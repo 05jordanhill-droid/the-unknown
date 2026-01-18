@@ -336,3 +336,126 @@ main:has(.regions_menu p:nth-of-type(7):hover) .pieces img:nth-of-type(12),
     left: 231px;
     display: inline;
 }
+
+
+@media screen and (max-width: 900px){
+    header{
+        column-gap: 20px;
+    }
+    header img{
+        width: 100%;
+    }
+    main{
+        display: block;
+        margin-top: 0;
+    }
+    .main_menu h3:nth-of-type(n + 2){
+        display: none;
+    }
+
+    .map{
+        height: 231px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 5fr 1fr;
+
+        background-size: 291px;
+        background-position: left;
+    }
+    .descChange .eternastrum{
+        /* transform: rotate(-90deg); */
+        padding-top: 0;
+
+        position: absolute;
+        right: 3px;
+        top: 4px;
+        z-index: 3;
+    }
+
+    .pieces img:first-of-type{
+        /* Machinoria */
+        width: 41px;
+        top: 86px;
+        left: 255px;
+    }
+    .pieces img:nth-of-type(2){
+        /* Sylvanara */
+        width: 49px;
+        top: 103px;
+        left: 153px;
+    }
+    .pieces img:nth-of-type(3){
+        /* Veridia */
+        width: 140px;
+        top: 94px;
+        left: 151px;
+    }
+    .pieces img:nth-of-type(4){
+        /* Drakoria */
+        width: 116px;
+        top: 134px;
+        left: 89px;
+    }
+    .pieces img:nth-of-type(5){
+        /* Equiloria */
+        width: 249px;
+        top: -29px;
+        left: 39px;
+    }
+    .pieces img:nth-of-type(6){
+        /* Goblinkin Vale */
+        width: 96px;
+        top: 111px;
+        left: 184px;
+    }
+    .pieces img:nth-of-type(7){
+        /* Grimwood Forest */
+        width: 116px;
+        top: 134px;
+        left: 89px;
+    }
+    .pieces img:nth-of-type(8){
+        /* Sands of Silethara */
+        width: 229px;
+        top: 92px;
+        left: -14px;
+    }
+    .pieces img:nth-of-type(9){
+        /* Titanpeak Range */
+        width: 236px;
+        top: 41px;
+        left: -31px;
+    }
+    .pieces img:nth-of-type(10){
+        /* Veilstead Enclave */
+        width: 40px;
+        top: 140px;
+        left: 131px;
+    }
+    .pieces img:nth-of-type(11){
+        /* Veridian Woodlands */
+        width: 139px;
+        top: 95px;
+        left: 152px;
+    }
+    .pieces img:nth-of-type(12){
+        /* Wildrun Hills */
+        width: 27px;
+        top: 140px;
+        left: 121px;
+    }
+
+    .kingdoms_menu, .regions_menu{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .info{
+        grid-template-columns: 1fr;
+        top: 1165px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .info{
+        top: 1165px;
+    }
+}
