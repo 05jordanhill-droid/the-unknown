@@ -7,10 +7,8 @@ header img{
     width: 20%;
 }
 
-main{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    margin-top: 50px;
+main div:first-of-type{
+    display: flex;
 }
 
 .main_menu{
@@ -19,9 +17,11 @@ main{
 
 .map{
     display: grid;
-    grid-column: 2/3;
-    grid-row: 1/-1;
     grid-template-columns: 1fr 3fr 1fr;
+
+    margin-left: 30%;
+    aspect-ratio: 4/3;
+    width: 100%;
     
     text-align: center;
     
@@ -29,10 +29,10 @@ main{
 
     background-image: url("../images/Eternastrum_Map/Eternastrum.png");
     background-repeat: no-repeat;
-    background-position: -55px;
-    background-size: 731px;
+    background-position: left;
+    background-size: 100%;
 
-    overflow: hidden;
+    overflow:hidden;
 
     position: relative;
     cursor: pointer;
@@ -51,7 +51,7 @@ main{
     margin: 0 auto;
     width: 100%;
     height: 100%;
-    padding-top: 20px;
+    padding-top: 2%;
 }
 
 .pieces img{
@@ -60,75 +60,75 @@ main{
 }
 .pieces img:first-of-type{
     /* Machinoria */
-    width: 104px;
-    top: 215px;
-    left: 588px;
+    width: 13.8%;
+    top: 37%;
+    left: 88%;
 }
 .pieces img:nth-of-type(2){
     /* Sylvanara */
-    width: 112px;
-    top: 267px;
-    left: 334px;
+    width: 15.5%;
+    top: 46%;
+    left: 53.3%;
 }
 .pieces img:nth-of-type(3){
     /* Veridia */
-    width: 349px;
-    top: 238px;
-    left: 328px;
+    width: 47.5%;
+    top: 40.8%;
+    left: 52.5%;
 }
 .pieces img:nth-of-type(4){
     /* Drakoria */
-    width: 291px;
-    top: 336px;
-    left: 171px;
+    width: 40%;
+    top: 58.3%;
+    left: 31%;
 }
 .pieces img:nth-of-type(5){
     /* Equiloria */
-    width: 619px;
-    top: -68px;
-    left: 48px;
+    width: 84%;
+    top: -15%;
+    left: 14.3%;
 }
 .pieces img:nth-of-type(6){
     /* Goblinkin Vale */
-    width: 240px;
-    top: 281px;
-    left: 407px;
+    width: 33%;
+    top: 48.2%;
+    left: 63.2%;
 }
 .pieces img:nth-of-type(7){
     /* Grimwood Forest */
-    width: 287px;
-    top: 338px;
-    left: 173px;
+    width: 40%;
+    top: 58.3%;
+    left: 31%;
 }
 .pieces img:nth-of-type(8){
     /* Sands of Silethara */
-    width: 547px;
-    top: 237px;
-    left: -68px;
+    width: 76%;
+    top: 40%;
+    left: -2%;
 }
 .pieces img:nth-of-type(9){
     /* Titanpeak Range */
-    width: 600px;
-    top: 103px;
-    left: -135px;
+    width: 81%;
+    top: 16%;
+    left: -10%;
 }
 .pieces img:nth-of-type(10){
     /* Veilstead Enclave */
-    width: 92px;
-    top: 354px;
-    left: 278px;
+    width: 15%;
+    top: 60.3%;
+    left: 45%;
 }
 .pieces img:nth-of-type(11){
     /* Veridian Woodlands */
-    width: 354px;
-    top: 236px;
-    left: 325px;
+    width: 48.7%;
+    top: 39.999%;
+    left: 52.1%;
 }
 .pieces img:nth-of-type(12){
     /* Wildrun Hills */
-    width: 68px;
-    top: 354px;
-    left: 251px;
+    width: 9.4%;
+    top: 61.5%;
+    left: 41.5%;
 }
 
 .kingdoms_menu p:hover, .regions_menu p:hover{
@@ -139,12 +139,13 @@ main{
     grid-column: 1/-1;
     display: none;
     grid-template-columns: 2fr 1fr;
-    column-gap: 50px;
+    column-gap: 1%;
 
     position: absolute;
-    top: 1070px;
-    left: 55px;
-    right: 55px;
+    top: 140%;
+    left: 8%;
+    right: 8%;
+
 }
 
 
@@ -223,7 +224,7 @@ main{
 }
 
 .descChange .pieces .kingdoms{
-    display: inline;
+    /* display: inline; */
     z-index: 1;
 }
 
@@ -237,103 +238,108 @@ main:has(.kingdoms_menu p:first-of-type:hover) .pieces img:first-of-type,
 .machChange .pieces img:first-of-type{
     /* Machinoria */
     z-index: 2;
-    width: 134px;
-    top: 175px;
-    left: 565px;
+    /* width: 13.8%;
+    top: 37%;
+    left: 88%; */
+    display: inline;
 }
 main:has(.kingdoms_menu p:nth-of-type(2):hover) .pieces img:nth-of-type(2), 
 .sylvChange .pieces img:nth-of-type(2){
     /* Sylvanara */
     z-index: 2;
-    width: 142px;
-    top: 252px;
-    left: 324px;
+    /* width: 15.5%;
+    top: 46%;
+    left: 53.3%; */
+    display: inline;
 }
 main:has(.kingdoms_menu p:nth-of-type(3):hover) .pieces img:nth-of-type(3), 
 .veriChange .pieces img:nth-of-type(3){
     /* Veridia */
     z-index: 2;
-    width: 379px;
-    top: 218px;
-    left: 318px;
+    /* width: 47.5%;
+    top: 40.8%;
+    left: 52.5%; */
+    display: inline;
 }
 main:has(.kingdoms_menu p:nth-of-type(4):hover) .pieces img:nth-of-type(4), 
 .drakChange .pieces img:nth-of-type(4){
     /* Drakoria */
     z-index: 2;
-    width: 321px;
-    top: 316px;
-    left: 151px;
+    /* width: 40%;
+    top: 58.3%;
+    left: 31%; */
+    display: inline;
 }
 main:has(.kingdoms_menu p:nth-of-type(5):hover) .pieces img:nth-of-type(5), 
 .equiChange .pieces img:nth-of-type(5){
     /* Equiloria */
     z-index: 2;
-    width: 649px;
-    top: -75px;
-    left: 28px;
+    /* width: 84%;
+    top: -15%;
+    left: 14.3%; */
+    display: inline;
 }
 main:has(.regions_menu p:first-of-type:hover) .pieces img:nth-of-type(6), 
 .goblChange .pieces img:nth-of-type(6){
     /* Goblinkin Vale */
     z-index: 2;
-    width: 270px;
-    top: 265px;
-    left: 387px;
+    /* width: 33%;
+    top: 48.2%;
+    left: 63.2%; */
     display: inline;
 }
 main:has(.regions_menu p:nth-of-type(2):hover) .pieces img:nth-of-type(7), 
 .grimChange .pieces img:nth-of-type(7){
     /* Grimwood Forest */
     z-index: 2;
-    width: 317px;
-    top: 318px;
-    left: 153px;
+    /* width: 40%;
+    top: 58.3%;
+    left: 31%; */
     display: inline;
 }
 main:has(.regions_menu p:nth-of-type(3):hover) .pieces img:nth-of-type(8), 
 .sileChange .pieces img:nth-of-type(8){
     /* Sands of Silethara */
     z-index: 2;
-    width: 577px;
-    top: 220px;
-    left: -88px;
+    /* width: 76%;
+    top: 40%;
+    left: -2%; */
     display: inline;
 }
 main:has(.regions_menu p:nth-of-type(4):hover) .pieces img:nth-of-type(9), 
 .titaChange .pieces img:nth-of-type(9){
     /* Titanpeak Range */
     z-index: 2;
-    width: 630px;
-    top: 93px;
-    left: -155px;
+    /* width: 81%;
+    top: 16%;
+    left: -10%; */
     display: inline;
 }
 main:has(.regions_menu p:nth-of-type(5):hover) .pieces img:nth-of-type(10), 
 .veilChange .pieces img:nth-of-type(10){
     /* Veilstead Enclave */
     z-index: 2;
-    width: 122px;
-    top: 344px;
-    left: 258px;
+    /* width: 15%;
+    top: 60.3%;
+    left: 45%; */
     display: inline;
 }
 main:has(.regions_menu p:nth-of-type(6):hover) .pieces img:nth-of-type(11), 
 .verinChange .pieces img:nth-of-type(11){
     /* Veridian Woodlands */
     z-index: 2;
-    width: 384px;
-    top: 216px;
-    left: 305px;
+    /* width: 48.7%;
+    top: 39.999%;
+    left: 52.1%; */
     display: inline;
 }
 main:has(.regions_menu p:nth-of-type(7):hover) .pieces img:nth-of-type(12), 
 .wildChange .pieces img:nth-of-type(12){
     /* Wildrun Hills */
     z-index: 2;
-    width: 98px;
-    top: 334px;
-    left: 231px;
+    /* width: 9.4%;
+    top: 61.5%;
+    left: 41.5%; */
     display: inline;
 }
 
@@ -345,7 +351,7 @@ main:has(.regions_menu p:nth-of-type(7):hover) .pieces img:nth-of-type(12),
     header img{
         width: 100%;
     }
-    main{
+    main, main div:first-of-type{
         display: block;
         margin-top: 0;
     }
@@ -354,94 +360,18 @@ main:has(.regions_menu p:nth-of-type(7):hover) .pieces img:nth-of-type(12),
     }
 
     .map{
-        height: 231px;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 5fr 1fr;
+        margin-left: 0;
 
-        background-size: 291px;
-        background-position: left;
     }
     .descChange .eternastrum{
-        /* transform: rotate(-90deg); */
         padding-top: 0;
 
         position: absolute;
         right: 3px;
         top: 4px;
         z-index: 3;
-    }
-
-    .pieces img:first-of-type{
-        /* Machinoria */
-        width: 41px;
-        top: 86px;
-        left: 255px;
-    }
-    .pieces img:nth-of-type(2){
-        /* Sylvanara */
-        width: 49px;
-        top: 103px;
-        left: 153px;
-    }
-    .pieces img:nth-of-type(3){
-        /* Veridia */
-        width: 140px;
-        top: 94px;
-        left: 151px;
-    }
-    .pieces img:nth-of-type(4){
-        /* Drakoria */
-        width: 116px;
-        top: 134px;
-        left: 89px;
-    }
-    .pieces img:nth-of-type(5){
-        /* Equiloria */
-        width: 249px;
-        top: -29px;
-        left: 39px;
-    }
-    .pieces img:nth-of-type(6){
-        /* Goblinkin Vale */
-        width: 96px;
-        top: 111px;
-        left: 184px;
-    }
-    .pieces img:nth-of-type(7){
-        /* Grimwood Forest */
-        width: 116px;
-        top: 134px;
-        left: 89px;
-    }
-    .pieces img:nth-of-type(8){
-        /* Sands of Silethara */
-        width: 229px;
-        top: 92px;
-        left: -14px;
-    }
-    .pieces img:nth-of-type(9){
-        /* Titanpeak Range */
-        width: 236px;
-        top: 41px;
-        left: -31px;
-    }
-    .pieces img:nth-of-type(10){
-        /* Veilstead Enclave */
-        width: 40px;
-        top: 140px;
-        left: 131px;
-    }
-    .pieces img:nth-of-type(11){
-        /* Veridian Woodlands */
-        width: 139px;
-        top: 95px;
-        left: 152px;
-    }
-    .pieces img:nth-of-type(12){
-        /* Wildrun Hills */
-        width: 27px;
-        top: 140px;
-        left: 121px;
     }
 
     .kingdoms_menu, .regions_menu{
