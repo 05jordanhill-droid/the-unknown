@@ -355,9 +355,6 @@ main:has(.regions_menu p:nth-of-type(7):hover) .pieces img:nth-of-type(12),
         display: block;
         margin-top: 0;
     }
-    .main_menu h3:nth-of-type(n + 2){
-        display: none;
-    }
 
     .map{
         grid-template-columns: 1fr;
