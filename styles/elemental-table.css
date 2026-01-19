@@ -122,9 +122,9 @@ main{
 .table div:nth-of-type(105){
     grid-column: 3/3;
 }
-/* .table div:nth-of-type(n+91):nth-of-type(-n+104){
+.table div:nth-of-type(n+91):nth-of-type(-n+104){
     margin-top: 25px;
-} */
+}
 
 
 .alkali_table{
@@ -329,5 +329,9 @@ noble_table
 
     .table div{
         font-size: .3em;
+    }
+
+    .table div:nth-of-type(n+91):nth-of-type(-n+104){
+        margin-top: 0px;
     }
 }
