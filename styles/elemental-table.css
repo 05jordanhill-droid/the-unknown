@@ -97,6 +97,7 @@ main{
 .table div{
     display: flex;
     aspect-ratio: 1/1;
+    width: 100%;
     justify-content: center;
 
     border: 1px solid black;

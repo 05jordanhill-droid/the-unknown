@@ -384,7 +384,6 @@ main:has(.regions_menu p:nth-of-type(7):hover) .pieces img:nth-of-type(12),
     .verinChange .veridian,
     .wildChange .wildrun{
         display: block;
-        
     }
 
 
@@ -417,5 +416,9 @@ main:has(.regions_menu p:nth-of-type(7):hover) .pieces img:nth-of-type(12),
 
     .kingdoms_menu, .regions_menu{
         display: block;
+    }
+
+    .info{
+        position: static;
     }
 }
