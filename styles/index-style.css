@@ -13,6 +13,7 @@ main div:first-of-type{
 
 .main_menu{
     display: grid;
+    width: 20%;
 }
 
 .map{
